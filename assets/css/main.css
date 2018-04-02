@@ -542,20 +542,7 @@ body {
   visibility: hidden; }
 
 body {
-  text-align: center; }
-
-.img-html,
-.img-css {
-  display: block;
-  width: 30vh;
-  height: 30vh;
-  margin-left: auto;
-  margin-right: auto; }
-
-.img-css {
-  background-image: url("../img/fig-2__med.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-color: red; }
+  background: #111;
+  color: #eee; }
 
 /*# sourceMappingURL=main.css.map */
