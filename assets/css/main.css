@@ -545,4 +545,106 @@ body {
   background: #111;
   color: #eee; }
 
+.container {
+  margin-top: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.title {
+  z-index: 999; }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; }
+
+.trafic-lights {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding: 5px; }
+
+.trafic-lights__row {
+  display: -ms-flexbox;
+  display: flex; }
+
+.trafic-lights__main-light {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(ellipse at center, #291616 10%, #080303 110%);
+  border: 2px solid #151515;
+  margin: 5px;
+  border-radius: 50%;
+  position: relative; }
+
+.trafic-lights__main-light--red,
+.trafic-lights__main-light--yellow,
+.trafic-lights__main-light--green {
+  border: none; }
+
+.trafic-lights__main-light--red {
+  background: radial-gradient(ellipse at center, #ff8989 -50%, #ff3232 100%);
+  box-shadow: 0px 0px 35px 0px #ff3232; }
+
+.trafic-lights__main-light--yellow {
+  background: radial-gradient(ellipse at center, #f9f9a7 0%, #ebf927 100%);
+  box-shadow: 0px 0px 35px 0px #ebf927; }
+
+.trafic-lights__main-light--green {
+  background: radial-gradient(ellipse at center, #bafcab 0%, #62f727 100%);
+  box-shadow: 0px 0px 35px 0px #62f727; }
+
+.trafic-lights__left-light,
+.trafic-lights__right-light {
+  width: 50px;
+  height: 100px;
+  margin: 5px;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 7%;
+  border-top-right-radius: 7%;
+  z-index: 1; }
+
+.trafic-lights__right-light {
+  border-bottom-left-radius: 7%;
+  border-top-left-radius: 7%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%; }
+
+#btn {
+  text-transform: uppercase;
+  background: transparent;
+  color: aliceblue;
+  padding: 1em 1.618em;
+  margin-top: 1em;
+  font-size: 1rem;
+  border-left: 0.1em solid #b00b55;
+  border-top: 0.1em solid #b00b55;
+  border-bottom: 0.1em solid transparent;
+  border-right: 0.1em solid transparent;
+  box-shadow: 0.2em 0.2em 0.2em #1e72d1;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer; }
+
+#btn:hover {
+  color: #1e72d1;
+  box-shadow: none;
+  border-left: 0.1em solid transparent;
+  border-top: 0.1em solid transparent;
+  border-bottom: 0.1em solid #b00b55;
+  border-right: 0.1em solid #b00b55; }
+
 /*# sourceMappingURL=main.css.map */
