@@ -43,8 +43,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
     + Added Sass Sourcemaps
  */
 gulp.task('sass', function () {
-    return gulp.src('assets/css/main.scss')
-        .pipe(sourcemaps.init())
+    return gulp.src('assets/css/*.scss')
         .pipe(sass({
             includePaths: ['css'],
             onError: browserSync.notify
@@ -52,7 +51,6 @@ gulp.task('sass', function () {
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(gulp.dest('_site/assets/css'))
         .pipe(browserSync.reload({stream:true}))
-        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('assets/css'));
 });
 

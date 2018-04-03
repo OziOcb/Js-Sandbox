@@ -6,6 +6,7 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}{{ page.linkCSS }}">
     </head>
     <body>
 
@@ -13,7 +14,7 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/functions.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}{{ page.linkJS }}"></script>
 
     </body>
 </html>
