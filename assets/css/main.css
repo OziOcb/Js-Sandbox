@@ -553,4 +553,7 @@ body {
       align-items: center; }
 
 .container {
-  width: 60%; }
+  width: 70%; }
+  @media (min-width: 36em) {
+    .container {
+      width: 50%; } }
