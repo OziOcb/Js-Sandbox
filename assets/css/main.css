@@ -543,4 +543,14 @@ body {
 
 body {
   background: #111;
-  color: #eee; }
+  color: #eee;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.container {
+  width: 60%; }
